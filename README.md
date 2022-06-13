@@ -6,10 +6,12 @@ Steps:
 
 1. Create new product template.
 2. Create new product section file.
-3. Add code after {%- when 'buy_buttons' -%}  from  <!--custom manual product---> and pass value in hidden in product form:
+3. Add code after {%- when 'buy_buttons' -%}  from  <!--custom manual product---> from file also pass value in hidden in product form:
+```
 <input type="hidden" name="add_on_pid" id="add_on_pid" value="" disabled>
 <input type="hidden" name="add_on_qty" id="add_on_qty" value="" disabled>
 <input type="hidden" name="add_on_vid" id="add_on_vid" value="{{someProduct.selected_or_first_available_variant.id }}" disabled>
+```
 5. Or you can replace code with my code i have mentioned file above
 6. Create custom.js and assign that file in theme.liquid.
 7. Customize product-form.js file add custom code for add additional product after finally()
