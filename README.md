@@ -12,7 +12,9 @@ Steps:
 <input type="hidden" name="add_on_vid" id="add_on_vid" value="{{someProduct.selected_or_first_available_variant.id }}" disabled>
 5. Or you can replace code with my code i have mentioned file above
 6. Create custom.js and assign that file in theme.liquid.
-7. Customize product-form.js file add custom code for add additional product after .finally()
+7. Customize product-form.js file add custom code for add additional product after finally()
+
+    ```
     var qty = $('#add_on_qty').val();
         var vid = $('#add_on_vid').val();
         alert(qty);
@@ -31,5 +33,6 @@ Steps:
             } 
           });
         }
+```
       
  
